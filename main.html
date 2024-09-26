@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Star Clicker</title>
+</head>
+
+<body>
+    <div class="SiteHolder">
+        <div class="nav">
+
+            <div class="navbar-item" id="nav-logo">
+                <div id="logo-star"></div>
+            </div>
+
+            <div class="navbar-item" id="profile">
+                <img src="Icons/user.png">
+            </div>
+            <div class="navbar-item" id="home">
+                <img src="Icons/home.png">
+            </div>
+            <div class="navbar-item" id="shop">
+                <img src="Icons/shop.png">
+            </div>
+            <div class="navbar-item" id="go-pro">
+                <img src="Icons/pro.png">
+            </div>
+            <div class="navbar-item" id="settings">
+                <img src="Icons/setting.png">
+            </div>
+            <div class="navbar-item" id="leaderboard">
+                <img src="Icons/leaderboard.png">
+            </div>
+            <div class="navbar-item" id="money-button">
+                <img src="Icons/money.png">
+            </div>
+        </div>
+
+        <div class="center_Content">
+            <div class="BG_1">
+                <div class="BG_2">
+                    <h2>Star Clicker</h2>
+                </div>
+                <div class="star"></div>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="upper-box">
+                <h3>Stats</h3>
+                <p>Money: <span id="earned-usdt">0.00000000</span> USDT</p>
+                <p>Total Clicks: <span id="click-count">0</span></p>
+
+                <p>Asteroid Health:</p>
+                <div class="health-bar">
+                    <div class="health" style="width: 100%;"></div>
+                </div>
+
+                <p>Progress:</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 0%;"></div>
+                </div>
+            </div>
+
+            <div class="Lower_item stat_item">
+                <div class="dropdown">
+                    <div class="current-tab">
+                        <h3>
+                            <span id="active-tab">Upgrades</span>
+                        </h3>
+                    </div>
+                    <div class="dropdown-content">
+                        <div class="tab" data-tab="Upgrades">Upgrades</div>
+                        <div class="tab" data-tab="Shop">Shop</div>
+                        <div class="tab" data-tab="Leaderboard">Leaderboard</div>
+                        <div class="tab" data-tab="Go Pro">Go Pro</div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div id="Upgrades" class="content-item active">
+
+                        <div class="upgrade-section">
+                            <div class="upgrade-item">
+                                <span>1 Double Click</span>
+                                <button class="activate-btn">Activate</button>
+                            </div>
+                            <div class="upgrade-item">
+                                <span>2 Auto Click</span>
+                                <button class="activate-btn">Activate</button>
+                            </div>
+                            <div class="upgrade-item">
+                                <span>3 Double Damage</span>
+                                <button class="activate-btn">Activate</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    
+                    <div id="Shop" class="content-item">
+
+                        <div class="shop">
+                            <div class="shop-item">
+                                <h3>Click Power Multiplier</h3>
+                                <p>Increase your click strength.</p>
+                                <button>Cost: 100 USDT</button>
+                            </div>
+
+                            <div class="shop-item">
+                                <h3>Auto Clicker Speed</h3>
+                                <p>Reduce delay between auto clicks.</p>
+                                <button>Cost: 200 USDT</button>
+                            </div>
+
+                            <div class="shop-item">
+                                <h3>Unlock Higher Damage Levels</h3>
+                                <p>Increase base damage output.</p>
+                                <button>Cost: 300 USDT</button>
+                            </div>
+
+                            <div class="shop-item">
+                                <h3>Asteroid Skins</h3>
+                                <p>Unlock different asteroid visuals.</p>
+                                <button>Cost: 50 USDT</button>
+                            </div>
+
+                            <div class="shop-item">
+                                <h3>Background Themes</h3>
+                                <p>Change the background theme.</p>
+                                <button>Cost: 150 USDT</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="Leaderboard" class="content-item">Leaderboard content goes here.</div>
+
+                    <div id="Go Pro" class="content-item">
+
+                        <div class="go-pro-section">
+                            <div class="pro-plan">
+                                <h3>1 Week Pro</h3>
+                                <p>Unlock all upgrades and skins for 1 week.</p>
+                                <button>Cost: 10 USDT</button>
+                            </div>
+
+                            <div class="pro-plan">
+                                <h3>1 Month Pro</h3>
+                                <p>Unlock all upgrades and skins for 1 month.</p>
+                                <button>Cost: 25 USDT</button>
+                            </div>
+
+                            <div class="pro-plan">
+                                <h3>Lifetime Pro</h3>
+                                <p>Unlock all upgrades and skins permanently.</p>
+                                <button>Cost: 100 USDT</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
